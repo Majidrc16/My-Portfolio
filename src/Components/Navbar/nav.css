@@ -1,0 +1,109 @@
+.navbar {
+  width: 100vw;
+  /* max-width: 75rem; */
+  height: 4.5rem;
+  margin: 0 auto;
+  /* padding: 0 0.5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: rgba(30, 30, 30);
+  box-sizing: border-box;
+}
+.desktopmenuitems{
+  margin: 1rem;
+  cursor: pointer;
+  text-decoration-line: none;
+  color: gray;
+  font-size: 1.32rem;
+  filter: brightness(95%);
+  padding: 0rem 0.5rem;
+}
+.desktopmenuitems:hover{
+  color: rgb(199, 252, 8) ;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(199, 252, 8) ;
+}
+.image{
+  height: 4.0rem;
+  width: 4.0rem;
+  border-radius: 50%;
+}
+.desktopmenubtn{
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  height: 2.7rem;
+  width: fit-content;
+}
+.desktopmenubtn:hover{
+  border: 3px solid black;
+  background-color: yellowgreen;
+}
+.desktopmenuimage{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem;
+  padding: 0 0.5rem;
+}
+.active{
+  color: yellow;
+  border-bottom: 3px solid yellow;
+  padding-bottom: 0.5rem;
+}
+.navmenu{
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background-color: black;
+  border-radius: 1rem;
+  /* border: 4px solid white; */
+}
+.ListItems{
+  color: rgb(7, 236, 129);
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background:rgb(30, 30, 30);
+  border: 3px solid white;
+  border-radius: 0.8rem;
+
+}
+.mobmenu{
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+  background-color: yellow;
+  color: yellow;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width:720px){
+  .mobmenu{
+    display: flex;
+  }
+  .desktopmenu{
+    display: none;
+  }
+  .desktopmenubtn{
+    display: none;
+  }
+}
